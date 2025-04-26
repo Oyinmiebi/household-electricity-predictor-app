@@ -9,8 +9,9 @@ import matplotlib.pyplot as plt
 import os
 
 # --- Configuration ---
-MODEL_PATH = 'C:/Users/ebina/Documents/Personal/NYSC/Data_Science_Advanced/Group_2_Projects/electricity_consumption/lstm_single_household_units_model.h5'
-SCALER_PATH = 'C:/Users/ebina/Documents/Personal/NYSC/Data_Science_Advanced/Group_2_Projects/electricity_consumption/scaler_single_household.pkl'
+# CORRECT - Uses relative path (assumes file is in the same directory as app.py)
+MODEL_PATH = 'lstm_single_household_units_model.h5'
+SCALER_PATH = 'scaler_single_household.pkl'
 LOOKBACK_PERIOD = 72 # Must match the lookback used during training
 
 # List of features the LSTM model was trained on (must match your training script exactly)
